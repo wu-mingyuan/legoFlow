@@ -1,0 +1,344 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.5.2 Chrome/142.0.7444.265 Electron/39.6.1 Safari/537.36" version="29.5.2">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="1411" dy="602" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="UQ1rKEQhp7pWMMgnoCf4-1" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rounded=1;whiteSpace=wrap;html=1;" value="WorkflowController.&lt;div&gt;executeWorkflow()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="230" x="200" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="UQ1rKEQhp7pWMMgnoCf4-2" parent="WIyWlLk6GJQsqaUBKTNV-1" style="ellipse;whiteSpace=wrap;html=1;" value="初始化SseEmitter" vertex="1">
+          <mxGeometry height="80" width="120" x="250" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="UQ1rKEQhp7pWMMgnoCf4-3" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="UQ1rKEQhp7pWMMgnoCf4-1" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="UQ1rKEQhp7pWMMgnoCf4-2" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="350" y="330" as="sourcePoint" />
+            <mxPoint x="400" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UQ1rKEQhp7pWMMgnoCf4-47" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="UQ1rKEQhp7pWMMgnoCf4-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="UQ1rKEQhp7pWMMgnoCf4-46" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UQ1rKEQhp7pWMMgnoCf4-4" parent="WIyWlLk6GJQsqaUBKTNV-1" style="ellipse;whiteSpace=wrap;html=1;" value="开启一个异步线程&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="250" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="UQ1rKEQhp7pWMMgnoCf4-5" parent="WIyWlLk6GJQsqaUBKTNV-1" style="ellipse;whiteSpace=wrap;html=1;" value="返回emitter给客户端，以建立连接" vertex="1">
+          <mxGeometry height="80" width="120" x="250" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="UQ1rKEQhp7pWMMgnoCf4-6" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="UQ1rKEQhp7pWMMgnoCf4-2" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="UQ1rKEQhp7pWMMgnoCf4-4" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="350" y="330" as="sourcePoint" />
+            <mxPoint x="400" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UQ1rKEQhp7pWMMgnoCf4-7" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="UQ1rKEQhp7pWMMgnoCf4-4" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="UQ1rKEQhp7pWMMgnoCf4-5" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="310" y="370" as="sourcePoint" />
+            <mxPoint x="400" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UQ1rKEQhp7pWMMgnoCf4-8" parent="WIyWlLk6GJQsqaUBKTNV-1" style="ellipse;whiteSpace=wrap;html=1;" value="获取workflowDSL" vertex="1">
+          <mxGeometry height="80" width="120" x="430" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="UQ1rKEQhp7pWMMgnoCf4-16" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="UQ1rKEQhp7pWMMgnoCf4-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="UQ1rKEQhp7pWMMgnoCf4-10" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UQ1rKEQhp7pWMMgnoCf4-9" parent="WIyWlLk6GJQsqaUBKTNV-1" style="ellipse;whiteSpace=wrap;html=1;" value="创建类SseStreamCallback&lt;div&gt;的对象callback&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="430" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="UQ1rKEQhp7pWMMgnoCf4-15" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="UQ1rKEQhp7pWMMgnoCf4-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="UQ1rKEQhp7pWMMgnoCf4-11" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UQ1rKEQhp7pWMMgnoCf4-20" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="UQ1rKEQhp7pWMMgnoCf4-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="UQ1rKEQhp7pWMMgnoCf4-19" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UQ1rKEQhp7pWMMgnoCf4-44" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="UQ1rKEQhp7pWMMgnoCf4-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="UQ1rKEQhp7pWMMgnoCf4-42" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UQ1rKEQhp7pWMMgnoCf4-10" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rounded=1;whiteSpace=wrap;html=1;" value="执行WorkflowEngine.&lt;div&gt;execute&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;传入的参数为(&lt;/div&gt;&lt;div&gt;workflowDSL, new VariablePool(), request.getInputs(),&amp;nbsp;&lt;/div&gt;&lt;div&gt;callback)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;可以看到，这里新建了一个变量池&lt;/div&gt;" vertex="1">
+          <mxGeometry height="170" width="190" x="410" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="UQ1rKEQhp7pWMMgnoCf4-11" parent="WIyWlLk6GJQsqaUBKTNV-1" style="ellipse;whiteSpace=wrap;html=1;" value="关闭emitter" vertex="1">
+          <mxGeometry height="80" width="120" x="445" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="UQ1rKEQhp7pWMMgnoCf4-12" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="UQ1rKEQhp7pWMMgnoCf4-4" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.013;entryY=0.426;entryDx=0;entryDy=0;entryPerimeter=0;" target="UQ1rKEQhp7pWMMgnoCf4-8" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="380" y="330" as="sourcePoint" />
+            <mxPoint x="460" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UQ1rKEQhp7pWMMgnoCf4-13" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="UQ1rKEQhp7pWMMgnoCf4-8" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="UQ1rKEQhp7pWMMgnoCf4-9" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="410" y="490" as="sourcePoint" />
+            <mxPoint x="460" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UQ1rKEQhp7pWMMgnoCf4-22" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="UQ1rKEQhp7pWMMgnoCf4-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="UQ1rKEQhp7pWMMgnoCf4-21" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UQ1rKEQhp7pWMMgnoCf4-19" parent="WIyWlLk6GJQsqaUBKTNV-1" style="whiteSpace=wrap;html=1;rounded=1;" value="调用verifyWorkflow(workflowDSL)&lt;div&gt;检查导入的dsl是否符合规范&lt;/div&gt;" vertex="1">
+          <mxGeometry height="55" width="185" x="715" y="567.5" as="geometry" />
+        </mxCell>
+        <mxCell id="UQ1rKEQhp7pWMMgnoCf4-24" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="UQ1rKEQhp7pWMMgnoCf4-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="UQ1rKEQhp7pWMMgnoCf4-23" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UQ1rKEQhp7pWMMgnoCf4-21" parent="WIyWlLk6GJQsqaUBKTNV-1" style="whiteSpace=wrap;html=1;rounded=1;" value="调用线程池的清理方法clear()，防止有其他数据影响" vertex="1">
+          <mxGeometry height="60" width="120" x="747.5" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="UQ1rKEQhp7pWMMgnoCf4-28" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="UQ1rKEQhp7pWMMgnoCf4-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="UQ1rKEQhp7pWMMgnoCf4-27" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7lCPbgNOMsr5auEiGND3-1" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="UQ1rKEQhp7pWMMgnoCf4-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="7lCPbgNOMsr5auEiGND3-0" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UQ1rKEQhp7pWMMgnoCf4-23" parent="WIyWlLk6GJQsqaUBKTNV-1" style="ellipse;whiteSpace=wrap;html=1;rounded=1;" value="创建工作流回调处理器&lt;div&gt;1、实例化&lt;span style=&quot;background-color: transparent;&quot;&gt;Queue&amp;lt;ChatCallBackStreamResult&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;和Queue&amp;lt;LLMGenerate&amp;gt;&lt;/div&gt;&lt;div&gt;2、从dsl中获取当前的flowId&lt;/div&gt;&lt;div&gt;3、获取end节点的是否流式输出这个值&lt;/div&gt;&lt;div&gt;3、用上面变量实例化WorkflowMsgCallback&lt;/div&gt;" vertex="1">
+          <mxGeometry height="180" width="232.5" x="767.5" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="UQ1rKEQhp7pWMMgnoCf4-30" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="UQ1rKEQhp7pWMMgnoCf4-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="UQ1rKEQhp7pWMMgnoCf4-29" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UQ1rKEQhp7pWMMgnoCf4-39" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="UQ1rKEQhp7pWMMgnoCf4-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="UQ1rKEQhp7pWMMgnoCf4-38" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UQ1rKEQhp7pWMMgnoCf4-27" parent="WIyWlLk6GJQsqaUBKTNV-1" style="whiteSpace=wrap;html=1;rounded=1;" value="调用EngineContextHolder.initContext(workflowDSL.getFlowId(), workflowDSL.getUuid(), workflowCallback)&lt;div&gt;初始化上下文&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="336.25" x="715" y="1090" as="geometry" />
+        </mxCell>
+        <mxCell id="UQ1rKEQhp7pWMMgnoCf4-32" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="UQ1rKEQhp7pWMMgnoCf4-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="UQ1rKEQhp7pWMMgnoCf4-31" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UQ1rKEQhp7pWMMgnoCf4-29" parent="WIyWlLk6GJQsqaUBKTNV-1" style="ellipse;whiteSpace=wrap;html=1;rounded=1;" value="sse发送开始工作的信息" vertex="1">
+          <mxGeometry height="80" width="80" x="843.755" y="1240" as="geometry" />
+        </mxCell>
+        <mxCell id="UQ1rKEQhp7pWMMgnoCf4-36" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="UQ1rKEQhp7pWMMgnoCf4-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="UQ1rKEQhp7pWMMgnoCf4-34" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UQ1rKEQhp7pWMMgnoCf4-31" parent="WIyWlLk6GJQsqaUBKTNV-1" style="ellipse;whiteSpace=wrap;html=1;rounded=1;" value="取得开始节点，并初始化开始节点的参数" vertex="1">
+          <mxGeometry height="80" width="80" x="843.755" y="1360" as="geometry" />
+        </mxCell>
+        <mxCell id="HdBakHR5HpJFvr5biEs5-3" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="UQ1rKEQhp7pWMMgnoCf4-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="HdBakHR5HpJFvr5biEs5-2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HdBakHR5HpJFvr5biEs5-5" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="UQ1rKEQhp7pWMMgnoCf4-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="HdBakHR5HpJFvr5biEs5-4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UQ1rKEQhp7pWMMgnoCf4-34" parent="WIyWlLk6GJQsqaUBKTNV-1" style="whiteSpace=wrap;html=1;rounded=1;" value="执行executeNode(startNode, variablePool, workflowCallback);&lt;div&gt;从开始节点开始执行链路&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="156.88" x="805.3199999999999" y="1480" as="geometry" />
+        </mxCell>
+        <mxCell id="UQ1rKEQhp7pWMMgnoCf4-41" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="UQ1rKEQhp7pWMMgnoCf4-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="UQ1rKEQhp7pWMMgnoCf4-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UQ1rKEQhp7pWMMgnoCf4-38" parent="WIyWlLk6GJQsqaUBKTNV-1" style="shape=tapeData;whiteSpace=wrap;html=1;perimeter=ellipsePerimeter;" value="详解" vertex="1">
+          <mxGeometry height="80" width="80" x="550" y="1100" as="geometry" />
+        </mxCell>
+        <mxCell id="UQ1rKEQhp7pWMMgnoCf4-40" parent="WIyWlLk6GJQsqaUBKTNV-1" style="whiteSpace=wrap;html=1;aspect=fixed;align=left;" value="&lt;div style=&quot;&quot;&gt;内部包装一个ttl，里面存储了content上下文，上下文中放入&lt;/div&gt;&lt;div style=&quot;&quot;&gt;flowId（工作流Id，标识一个工作流，前端传入）&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;chatId（对话Id，标识一个对话，前端传入）&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;sId（会话唯一标识，每次调用工作流都会生成一个新的，一个对话中可能会调用多次工作流）&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;workflowCallback&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;父线程在创建子线程的时候会复制这个ttl给子线程，因此子线程直接从ttl中就可以得到这些重要信息，不需要在方法参数中传递 。&lt;/div&gt;" vertex="1">
+          <mxGeometry height="240" width="240" x="210" y="1020" as="geometry" />
+        </mxCell>
+        <mxCell id="UQ1rKEQhp7pWMMgnoCf4-45" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="UQ1rKEQhp7pWMMgnoCf4-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="UQ1rKEQhp7pWMMgnoCf4-43" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UQ1rKEQhp7pWMMgnoCf4-42" parent="WIyWlLk6GJQsqaUBKTNV-1" style="shape=tapeData;whiteSpace=wrap;html=1;perimeter=ellipsePerimeter;" value="详解变量池" vertex="1">
+          <mxGeometry height="80" width="80" x="270" y="567.5" as="geometry" />
+        </mxCell>
+        <mxCell id="UQ1rKEQhp7pWMMgnoCf4-43" parent="WIyWlLk6GJQsqaUBKTNV-1" style="whiteSpace=wrap;html=1;aspect=fixed;align=left;" value="变量池中存储的数据的数据结构是两层map&lt;div&gt;第一层map的key是节点id&lt;/div&gt;&lt;div&gt;第一层map的value是另一个map&lt;/div&gt;&lt;div&gt;第二层map的key的变量名，如input&lt;/div&gt;&lt;div&gt;第二层map的value是这个变量的值&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;节点在执行前会从变量池中获取所需的变量；执行结束后会把输出放到变量池中&lt;/div&gt;" vertex="1">
+          <mxGeometry height="200" width="200" x="-10" y="507.5" as="geometry" />
+        </mxCell>
+        <mxCell id="HdBakHR5HpJFvr5biEs5-1" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="UQ1rKEQhp7pWMMgnoCf4-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="HdBakHR5HpJFvr5biEs5-0" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UQ1rKEQhp7pWMMgnoCf4-46" parent="WIyWlLk6GJQsqaUBKTNV-1" style="shape=tapeData;whiteSpace=wrap;html=1;perimeter=ellipsePerimeter;" value="详解AsyncUtil" vertex="1">
+          <mxGeometry height="80" width="90" x="90" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="HdBakHR5HpJFvr5biEs5-0" parent="WIyWlLk6GJQsqaUBKTNV-1" style="whiteSpace=wrap;html=1;aspect=fixed;align=left;" value="这是一个异步工具类，用来创建子线程。&lt;div&gt;&lt;br&gt;&lt;div&gt;里面封装了已经定义好的线程池和线程工厂，已经可直接调用的超时控制。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;线程池的队列长度是0，如果核心线程池满了依旧直接创建新的线程。这是个io密集型应用。核心线程数是cpu的个数×2。队列长度为0是因为快速响应、不堆积在内存。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;如果最大线程池满了直接启动拒绝策略&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;CallerRunsPolicy。这个策略的含义是让调用线程来执行子线程的任务&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;线程池被ttl封装，以在线程间传递上下文&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="280" width="280" x="-260" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="HdBakHR5HpJFvr5biEs5-2" parent="WIyWlLk6GJQsqaUBKTNV-1" style="ellipse;whiteSpace=wrap;html=1;rounded=1;" value="根据执行的结果通过sse向前端发信息" vertex="1">
+          <mxGeometry height="80" width="80" x="843.76" y="1630" as="geometry" />
+        </mxCell>
+        <mxCell id="HdBakHR5HpJFvr5biEs5-7" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="HdBakHR5HpJFvr5biEs5-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="HdBakHR5HpJFvr5biEs5-6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HdBakHR5HpJFvr5biEs5-4" parent="WIyWlLk6GJQsqaUBKTNV-1" style="ellipse;whiteSpace=wrap;html=1;rounded=1;" value="先判断自身有没有被执行以及状态是不是skip，如果是就return" vertex="1">
+          <mxGeometry height="120" width="120" x="1060" y="1470" as="geometry" />
+        </mxCell>
+        <mxCell id="HdBakHR5HpJFvr5biEs5-9" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="HdBakHR5HpJFvr5biEs5-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="HdBakHR5HpJFvr5biEs5-8" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HdBakHR5HpJFvr5biEs5-6" parent="WIyWlLk6GJQsqaUBKTNV-1" style="ellipse;whiteSpace=wrap;html=1;rounded=1;" value="做前置检查，看这个节点的前置节点有没有被执行，如果没有，则先去执行前置节点" vertex="1">
+          <mxGeometry height="130" width="130" x="1055" y="1660" as="geometry" />
+        </mxCell>
+        <mxCell id="HdBakHR5HpJFvr5biEs5-11" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="HdBakHR5HpJFvr5biEs5-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="HdBakHR5HpJFvr5biEs5-10" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HdBakHR5HpJFvr5biEs5-8" parent="WIyWlLk6GJQsqaUBKTNV-1" style="ellipse;whiteSpace=wrap;html=1;rounded=1;" value="如果这个节点的状态为mark，则去分析它能否执行" vertex="1">
+          <mxGeometry height="115" width="120" x="1060" y="1850" as="geometry" />
+        </mxCell>
+        <mxCell id="HdBakHR5HpJFvr5biEs5-13" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="HdBakHR5HpJFvr5biEs5-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="HdBakHR5HpJFvr5biEs5-12" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HdBakHR5HpJFvr5biEs5-15" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="HdBakHR5HpJFvr5biEs5-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="HdBakHR5HpJFvr5biEs5-14" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HdBakHR5HpJFvr5biEs5-10" parent="WIyWlLk6GJQsqaUBKTNV-1" style="whiteSpace=wrap;html=1;rounded=1;align=left;" value="执行当前节点。&lt;div&gt;会根据节点的类型去加载不同的节点执行器，然后把节点放到节点执行器中去执行&lt;/div&gt;&lt;div&gt;executor.execute(new NodeState(node, variablePool, callback))&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="255" x="992.5" y="2030" as="geometry" />
+        </mxCell>
+        <mxCell id="HdBakHR5HpJFvr5biEs5-12" parent="WIyWlLk6GJQsqaUBKTNV-1" style="ellipse;whiteSpace=wrap;html=1;align=left;rounded=1;" value="执行完后会根据它的情况去执行其他节点或直接抛出异常" vertex="1">
+          <mxGeometry height="120" width="120" x="1060" y="2180" as="geometry" />
+        </mxCell>
+        <mxCell id="HdBakHR5HpJFvr5biEs5-17" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="HdBakHR5HpJFvr5biEs5-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="HdBakHR5HpJFvr5biEs5-16" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HdBakHR5HpJFvr5biEs5-14" parent="WIyWlLk6GJQsqaUBKTNV-1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;align=center;rounded=1;" value="NodeExecutor接口&lt;div&gt;execute方法&lt;/div&gt;&lt;div&gt;getNodeType方法&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="160" x="1320" y="2040" as="geometry" />
+        </mxCell>
+        <mxCell id="HdBakHR5HpJFvr5biEs5-19" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="HdBakHR5HpJFvr5biEs5-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="HdBakHR5HpJFvr5biEs5-18" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1400" y="2320" />
+              <mxPoint x="1530" y="2320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HdBakHR5HpJFvr5biEs5-23" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="HdBakHR5HpJFvr5biEs5-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="HdBakHR5HpJFvr5biEs5-22" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1400" y="2320" />
+              <mxPoint x="1075" y="2320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HdBakHR5HpJFvr5biEs5-29" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="HdBakHR5HpJFvr5biEs5-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="HdBakHR5HpJFvr5biEs5-28" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HdBakHR5HpJFvr5biEs5-16" parent="WIyWlLk6GJQsqaUBKTNV-1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;" value="abstractNodeExecutor (抽象基类）" vertex="1">
+          <mxGeometry height="60" width="220" x="1290" y="2180" as="geometry" />
+        </mxCell>
+        <mxCell id="HdBakHR5HpJFvr5biEs5-33" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="HdBakHR5HpJFvr5biEs5-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="HdBakHR5HpJFvr5biEs5-32" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1530" y="2560" />
+              <mxPoint x="1285" y="2560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HdBakHR5HpJFvr5biEs5-18" parent="WIyWlLk6GJQsqaUBKTNV-1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;" value="LLMNodeExecutor (具体实现类）" vertex="1">
+          <mxGeometry height="60" width="220" x="1420" y="2470" as="geometry" />
+        </mxCell>
+        <mxCell id="HdBakHR5HpJFvr5biEs5-22" parent="WIyWlLk6GJQsqaUBKTNV-1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;" value="StartNodeExecutor (具体实现类）" vertex="1">
+          <mxGeometry height="60" width="220" x="965" y="2470" as="geometry" />
+        </mxCell>
+        <mxCell id="HdBakHR5HpJFvr5biEs5-24" parent="WIyWlLk6GJQsqaUBKTNV-1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;" value="EndNodeExecutor (具体实现类）" vertex="1">
+          <mxGeometry height="60" width="220" x="1185" y="2470" as="geometry" />
+        </mxCell>
+        <mxCell id="Cgr0tETAb1VyBTnPi48--1" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="HdBakHR5HpJFvr5biEs5-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Cgr0tETAb1VyBTnPi48--0" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HdBakHR5HpJFvr5biEs5-25" parent="WIyWlLk6GJQsqaUBKTNV-1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;" value="PluginNodeExecutor (具体实现类）" vertex="1">
+          <mxGeometry height="60" width="220" x="1670" y="2470" as="geometry" />
+        </mxCell>
+        <mxCell id="HdBakHR5HpJFvr5biEs5-26" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="HdBakHR5HpJFvr5biEs5-24" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="1295" y="2320" />
+            </Array>
+            <mxPoint x="1400" y="2320" as="sourcePoint" />
+            <mxPoint x="1360" y="2410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HdBakHR5HpJFvr5biEs5-27" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" style="endArrow=classic;html=1;rounded=0;entryX=0.524;entryY=0.034;entryDx=0;entryDy=0;entryPerimeter=0;" target="HdBakHR5HpJFvr5biEs5-25" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="1785" y="2320" />
+            </Array>
+            <mxPoint x="1400" y="2320" as="sourcePoint" />
+            <mxPoint x="1550" y="2380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HdBakHR5HpJFvr5biEs5-31" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="HdBakHR5HpJFvr5biEs5-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="HdBakHR5HpJFvr5biEs5-30" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HdBakHR5HpJFvr5biEs5-28" parent="WIyWlLk6GJQsqaUBKTNV-1" style="whiteSpace=wrap;html=1;rounded=1;align=left;" value="execute方法详解：&lt;div&gt;先分析节点有没有重试和超时相关的配置，如果没有，那么直接调用doExecute方法；&lt;/div&gt;&lt;div&gt;如果有超时没重试，那么调用&lt;span style=&quot;white-space-collapse: preserve; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;doExecuteWithTimeout，里面封装了doExecute方法；&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space-collapse: preserve; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;如果有超时有重试，那么每次执行&lt;/span&gt;&lt;span style=&quot;white-space-collapse: preserve; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;doExecuteWithTimeout后去检查重试次数有没有超，并且采用指数退让的方法等待一段时间。&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="340" x="1640" y="2135" as="geometry" />
+        </mxCell>
+        <mxCell id="HdBakHR5HpJFvr5biEs5-30" parent="WIyWlLk6GJQsqaUBKTNV-1" style="whiteSpace=wrap;html=1;align=left;rounded=1;" value="doExecute方法详解：&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;第一步：通过sse发送开始执行的信息&lt;/div&gt;&lt;div&gt;第二步：获取input参数（先看这个参数是不是引用参数，不是就直接用，是的话再用变量池中获取）&lt;/div&gt;&lt;div&gt;第三步：调用executeNode方法来执行节点，这个方法由具体实现类来完成，比如LLMNode的具体类的executeNode方法&lt;/div&gt;&lt;div&gt;第四步：把output保存到变量池中&lt;/div&gt;&lt;div&gt;第五步：把执行结果通过sse回传到前端&lt;/div&gt;" vertex="1">
+          <mxGeometry height="170" width="320" x="2100" y="2125" as="geometry" />
+        </mxCell>
+        <mxCell id="HdBakHR5HpJFvr5biEs5-37" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="HdBakHR5HpJFvr5biEs5-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="HdBakHR5HpJFvr5biEs5-36" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HdBakHR5HpJFvr5biEs5-32" parent="WIyWlLk6GJQsqaUBKTNV-1" style="whiteSpace=wrap;html=1;rounded=1;align=left;" value="executeNode方法详解：&lt;div&gt;&lt;div&gt;1、获取模型id&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;2、解析提示词&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;3、过去历史对话记录&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;4、构造请求参数&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;5、开辟一个新的对话历史记录，并先保存一些信息&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;6、调用大模型&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;7、保存对话信息&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;8、格式化输出&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;9、返回&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="190" width="240" x="1165" y="2710" as="geometry" />
+        </mxCell>
+        <mxCell id="HdBakHR5HpJFvr5biEs5-36" parent="WIyWlLk6GJQsqaUBKTNV-1" style="whiteSpace=wrap;html=1;align=left;rounded=1;" value="历史对话相关的类是LlmChatHistory，下面是该类的详解：&lt;div&gt;&lt;br&gt;&lt;div&gt;1、存储历史对话的数据结构是LoadingCache&amp;lt;String, ConcurrentLinkedQueue&amp;lt;ChatItem&amp;gt;&amp;gt;&amp;nbsp;chatHistoryCache。&lt;/div&gt;&lt;div&gt;这是用来Guava的本地缓存，key是会话id＋节点id，最多可以存一万个，30分钟过期，value是chatItem队列，存这个会话这个节点的历史记录，最多存十个，超了会淘汰最早进入队列的ChatItem。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2、会话Id由前端传入，相同会话的话，chatId相同&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="165" width="385" x="1550" y="2582.5" as="geometry" />
+        </mxCell>
+        <mxCell id="HdBakHR5HpJFvr5biEs5-41" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="HdBakHR5HpJFvr5biEs5-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="HdBakHR5HpJFvr5biEs5-40" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HdBakHR5HpJFvr5biEs5-38" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rounded=1;whiteSpace=wrap;html=1;align=left;" value="调用模型相关的类是OpenAiStyleLlmIntegration和ModelServiceClient类，下面是详解：&lt;div&gt;executeNode方法调用modelServiceClient.chatCompletion方法，然后这个方法再调用&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;OpenAiStyleLlmIntegration的&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;call方法，这个方法是真正起作用的方法&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="170" width="217.5" x="1552.5" y="2790" as="geometry" />
+        </mxCell>
+        <mxCell id="HdBakHR5HpJFvr5biEs5-39" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="HdBakHR5HpJFvr5biEs5-32" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="HdBakHR5HpJFvr5biEs5-38" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="1480" y="2805" />
+              <mxPoint x="1480" y="2875" />
+            </Array>
+            <mxPoint x="1610" y="2850" as="sourcePoint" />
+            <mxPoint x="1660" y="2800" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HdBakHR5HpJFvr5biEs5-40" parent="WIyWlLk6GJQsqaUBKTNV-1" style="whiteSpace=wrap;html=1;align=left;rounded=1;" value="&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: transparent;&quot;&gt;OpenAiStyleLlmIntegration的&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;call方法详解：&lt;/span&gt;&lt;div&gt;第一步：构建提示词，系统提示次就用这次的，用户提示词融合前几轮的&lt;/div&gt;&lt;div&gt;第二步：调用buildChatModel() - 构建聊天模型，配置模型参数&lt;/div&gt;&lt;div&gt;第三步：通过Flux流式的方式，流式得到大模型的回复，并每得到一个回复就把结果通过sse推送到前端，优化用户体验&lt;/div&gt;" vertex="1">
+          <mxGeometry height="147.5" width="300" x="1890" y="2801.25" as="geometry" />
+        </mxCell>
+        <mxCell id="7lCPbgNOMsr5auEiGND3-0" parent="WIyWlLk6GJQsqaUBKTNV-1" style="whiteSpace=wrap;html=1;rounded=1;align=left;" value="&lt;span style=&quot;text-align: center;&quot;&gt;WorkflowMsgCallback详解：&lt;/span&gt;&lt;div&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;text-align: center;&quot;&gt;1、和&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;SseStreamCallback类一起实现了&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;StreamCallback接口，&lt;/span&gt;&lt;span style=&quot;text-align: center; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;WorkflowMsgCallback在实例化的时候需要传入&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;SseStreamCallback的实例对象&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;2、内部封装了&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;ChatCallBacks对象，这个对象提供了产生信息的一系列方法，会把信息放到队列中&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;3、&lt;/span&gt;&lt;span style=&quot;text-align: center; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;WorkflowMsgCallback类在实例化的时候会开启一个新线程，里面会不断的查询流队列中是否有信息，如果有，则调用封装的sse将其传递给前端&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;text-align: center; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;text-align: center; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;4、这个类还有一个队列放结束信息，当工作流结束后会进行消费，将信息传递给前端。&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="215" width="580" x="1150" y="795" as="geometry" />
+        </mxCell>
+        <mxCell id="Cgr0tETAb1VyBTnPi48--3" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Cgr0tETAb1VyBTnPi48--0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Cgr0tETAb1VyBTnPi48--2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Cgr0tETAb1VyBTnPi48--0" parent="WIyWlLk6GJQsqaUBKTNV-1" style="whiteSpace=wrap;html=1;rounded=1;align=left;" value="调用PluginNodeExecutor的executeNode" vertex="1">
+          <mxGeometry height="100" width="190" x="2520" y="2470" as="geometry" />
+        </mxCell>
+        <mxCell id="Cgr0tETAb1VyBTnPi48--5" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Cgr0tETAb1VyBTnPi48--2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Cgr0tETAb1VyBTnPi48--4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Cgr0tETAb1VyBTnPi48--7" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Cgr0tETAb1VyBTnPi48--2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Cgr0tETAb1VyBTnPi48--6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Cgr0tETAb1VyBTnPi48--2" parent="WIyWlLk6GJQsqaUBKTNV-1" style="whiteSpace=wrap;html=1;align=left;rounded=1;" value="调用PluginServiceClient的toolCall" vertex="1">
+          <mxGeometry height="70" width="195" x="2517.5" y="2660" as="geometry" />
+        </mxCell>
+        <mxCell id="Cgr0tETAb1VyBTnPi48--9" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Cgr0tETAb1VyBTnPi48--4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Cgr0tETAb1VyBTnPi48--8" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Cgr0tETAb1VyBTnPi48--4" parent="WIyWlLk6GJQsqaUBKTNV-1" style="whiteSpace=wrap;html=1;align=left;rounded=1;" value="是tts节点的话，调用内置好的讯飞或者千问tts&lt;div&gt;以讯飞为例：调用SmartTTSIntegration的call&lt;/div&gt;" vertex="1">
+          <mxGeometry height="65" width="260" x="2485" y="2815" as="geometry" />
+        </mxCell>
+        <mxCell id="Cgr0tETAb1VyBTnPi48--15" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Cgr0tETAb1VyBTnPi48--6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Cgr0tETAb1VyBTnPi48--14" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Cgr0tETAb1VyBTnPi48--6" parent="WIyWlLk6GJQsqaUBKTNV-1" style="whiteSpace=wrap;html=1;align=left;rounded=1;" value="是外部导入节点的话，调用AiToolsIntegration的call" vertex="1">
+          <mxGeometry height="65" width="170" x="2840" y="2662.5" as="geometry" />
+        </mxCell>
+        <mxCell id="Cgr0tETAb1VyBTnPi48--11" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Cgr0tETAb1VyBTnPi48--8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Cgr0tETAb1VyBTnPi48--10" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Cgr0tETAb1VyBTnPi48--8" parent="WIyWlLk6GJQsqaUBKTNV-1" style="whiteSpace=wrap;html=1;align=left;rounded=1;" value="call方法详解：&lt;div&gt;1、提取参数、校验参数&lt;/div&gt;&lt;div&gt;2、执行tts合成&lt;/div&gt;&lt;div&gt;3、把返回的值上传到minio并获取url&lt;/div&gt;&lt;div&gt;4、创建结果&lt;/div&gt;" vertex="1">
+          <mxGeometry height="121.25" width="210" x="2440" y="2948.75" as="geometry" />
+        </mxCell>
+        <mxCell id="Cgr0tETAb1VyBTnPi48--13" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Cgr0tETAb1VyBTnPi48--10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Cgr0tETAb1VyBTnPi48--12" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Cgr0tETAb1VyBTnPi48--10" parent="WIyWlLk6GJQsqaUBKTNV-1" style="whiteSpace=wrap;html=1;align=left;rounded=1;" value="第三步执行tts合成详解：&lt;div&gt;1、生成认证url&lt;/div&gt;&lt;div&gt;2、创建websocket监听器&lt;/div&gt;&lt;div&gt;3、建立websocket连接&lt;/div&gt;&lt;div&gt;4、等待结果或超时&lt;/div&gt;" vertex="1">
+          <mxGeometry height="95.94" width="190" x="2700" y="2961.4" as="geometry" />
+        </mxCell>
+        <mxCell id="Cgr0tETAb1VyBTnPi48--12" parent="WIyWlLk6GJQsqaUBKTNV-1" style="whiteSpace=wrap;html=1;align=left;rounded=1;" value="websocket监听器是用的自定义的TTSWebSocketListener，在建立连接时自动发送tts请求，然后用自定义的格式来接收响应" vertex="1">
+          <mxGeometry height="106.96" width="160" x="2930" y="2955.8900000000003" as="geometry" />
+        </mxCell>
+        <mxCell id="Cgr0tETAb1VyBTnPi48--14" parent="WIyWlLk6GJQsqaUBKTNV-1" style="whiteSpace=wrap;html=1;align=left;rounded=1;" value="1、提取并校验参数&lt;div&gt;2、初始化link客户端&lt;/div&gt;&lt;div&gt;3、查找数据库找到对应的tool，然后执行&lt;/div&gt;" vertex="1">
+          <mxGeometry height="87.5" width="230" x="3080" y="2642.5" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
