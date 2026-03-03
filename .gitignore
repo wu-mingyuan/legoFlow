@@ -243,4 +243,4 @@ docker-compose.override.yml
 *.dockerignore.local
 /.qoder/repowiki
 
-.drawio.bkp
+.drawio
